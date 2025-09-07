@@ -544,7 +544,7 @@ section,
 --------------------------------------------------------------*/
 .hero {
   width: 100%;
-  min-height: 100vh;
+  min-height: 40vh;
   position: relative;
   padding: 80px 0;
   display: flex;
@@ -798,6 +798,11 @@ section,
   text-transform: uppercase;
   margin-bottom: 10px;
   transition: all 0.3s ease-in-out;
+}
+.portfolio .portfolio-item {
+  width: 100%;
+  max-width: 400px; /* optional, controls max width of each box */
+  height: 180px;
 }
 
 .portfolio .portfolio-filters li:hover,
