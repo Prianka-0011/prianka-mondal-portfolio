@@ -62,8 +62,8 @@
         <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
         <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
         <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
-        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
-        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Projects & Publications</a></li>
+        <!-- <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li> -->
       </ul>
     </nav>
 
@@ -521,9 +521,8 @@
         <div class="portfolio-info p-3">
           <h4>${item.title}</h4>
           <p>${item.description}</p>
-          <div class="d-flex gap-2 mt-2">
+          <div class="d-flex  mt-2">
             <a href="${item.previewLink}" class="glightbox preview-link" data-gallery="portfolio-gallery-${item.category}" title="Preview"><i class="bi bi-zoom-in"></i></a>
-            <a href="${item.detailsLink}" class="details-link" ${item.external ? 'target="_blank"' : ''} title="View Details"><i class="bi bi-link-45deg"></i></a>
           </div>
         </div>
       </div>
