@@ -48,14 +48,16 @@
     </div>
 
     <a href="index.html" class="logo d-flex align-items-center justify-content-center">
-      <!-- Uncomment the line below if you also wish to use an image logo -->
-      <!-- <img src="assets/img/logo.png" alt=""> -->
       <h1 class="sitename">Prianka Mondal</h1>
     </a>
 
     <div class="social-links text-center">
       <a href="https://www.linkedin.com/in/priankamondal40/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      <a href="https://github.com/Prianka-0011" class="github" target="_blank">
+        <i class="bi bi-github"></i>
+      </a>
     </div>
+   
 
     <nav id="navmenu" class="navmenu">
       <ul>
@@ -63,7 +65,7 @@
         <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
         <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
         <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Projects & Publications</a></li>
-        <!-- <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li> -->
+        <li><a href="#hire-me"><i class="bi bi-envelope navicon"></i> Hire Me</a></li>
       </ul>
     </nav>
 
@@ -74,7 +76,7 @@
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
 
-      <img src="assets/img/hero.png" alt="" data-aos="fade-in" class="">
+      <!-- <img src="assets/img/hero.png" alt="" data-aos="fade-in" class=""> -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <h2>Prianka Mondal</h2>
@@ -396,7 +398,18 @@
       </div>
     </section -->
     <!-- /Testimonials Section -->
+    <section id="hire-me" class="hire-me-section text-center py-5 text-dark">
+      <div class="container" data-aos="fade-up">
+        <h2 class="mb-3 display-5 fw-bold">Let’s Build Something Amazing Together 🚀</h2>
+        <p class="mb-4 fs-5">
+          If my work impressed you, I’d love to bring the same value to your team or project.
+        </p>
+      </div>
+    </section>
+
+
   </main>
+  <!-- Hire Me Footer CTA -->
 
   <footer id="footer" class="footer position-relative light-background">
 
@@ -518,11 +531,12 @@
     <div class="col-lg-4 col-md-6 portfolio-item isotope-item ${item.category}">
       <div class="portfolio-content h-100 shadow-lg rounded-3">
         <img src="${item.img}" class="img-fluid rounded-top" alt="${item.alt}">
-        <div class="portfolio-info p-3">
+        <div class="portfolio-info p-5">
           <h4>${item.title}</h4>
-          <p>${item.description}</p>
-          <div class="d-flex  mt-2">
-            <a href="${item.previewLink}" class="glightbox preview-link" data-gallery="portfolio-gallery-${item.category}" title="Preview"><i class="bi bi-zoom-in"></i></a>
+          <div class=" mt-2">
+            <a href="${item.previewLink}" class="btn-details" data-gallery="portfolio-gallery-${item.category}" title="Detail">
+              Details
+            </a>
           </div>
         </div>
       </div>

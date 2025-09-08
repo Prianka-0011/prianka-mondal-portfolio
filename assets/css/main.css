@@ -144,7 +144,8 @@ h6 {
 --------------------------------------------------------------*/
 .header {
   color: var(--default-color);
-  background-color: var(--background-color);
+  background-color: #303031;
+  /* background-color: var(--background-color); */
   position: fixed;
   top: 0;
   left: 0;
@@ -256,6 +257,7 @@ h6 {
 .navmenu {
   padding: 0;
   z-index: 9997;
+  
 }
 
 .navmenu ul {
@@ -544,7 +546,7 @@ section,
 --------------------------------------------------------------*/
 .hero {
   width: 100%;
-  min-height: 40vh;
+  min-height: 10vh;
   position: relative;
   padding: 80px 0;
   display: flex;
@@ -846,11 +848,11 @@ section,
 
 .portfolio .portfolio-content .portfolio-info h4 {
   font-size: 14px;
-  padding: 5px 10px;
-  font-weight: 400;
+  /* padding: 5px 10px 0px 10px; */
+  font-weight: 800;
   color: #ffffff;
   display: inline-block;
-  background-color: var(--accent-color);
+  /* background-color: var(--accent-color); */
 }
 
 .portfolio .portfolio-content .portfolio-info p {
@@ -1280,10 +1282,9 @@ section,
 }
 .profile-img {
   width: 300px;      /* adjust as needed */
-  height: 300px;     /* adjust as needed */
+  height: 200px;     /* adjust as needed */
   object-fit: cover; /* keeps image ratio without stretching */
   border-radius: 10px; /* rounded corners */
-  border: 2px solid black; /* black border */
 }
 
 .portfolio-item {
@@ -1332,3 +1333,21 @@ section,
   color: #007bff;
   transition: color 0.3s ease, transform 0.3s ease;
 }
+
+ .btn-details {
+  display: inline-block;
+  padding: 4px 10px; /* smaller size */
+  font-size: 0.8rem!important; /* small text */
+  color: #fff!important;;
+  background-color: #149ddd;
+  border-radius: 4px;
+  /* border: solid 1px; */
+  /* border-color: #eee; */
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+/* .btn-details:hover {
+  background-color: #0056b3;
+  transform: translateY(-1px);
+} */
