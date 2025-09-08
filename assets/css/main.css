@@ -847,9 +847,9 @@ section,
 }
 
 .portfolio .portfolio-content .portfolio-info h4 {
-  font-size: 14px;
+  font-size: 18px;
   /* padding: 5px 10px 0px 10px; */
-  font-weight: 800;
+  font-weight: 700;
   color: #ffffff;
   display: inline-block;
   /* background-color: var(--accent-color); */
