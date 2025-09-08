@@ -1278,3 +1278,10 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+.profile-img {
+  width: 300px;      /* adjust as needed */
+  height: 300px;     /* adjust as needed */
+  object-fit: cover; /* keeps image ratio without stretching */
+  border-radius: 10px; /* rounded corners */
+  border: 2px solid black; /* black border */
+}
