@@ -160,6 +160,7 @@
 
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200" id="portfolio-items">
             <!-- Portfolio items will be injected here -->
+            
           </div>
 
         </div>
@@ -342,110 +343,207 @@
 
   <script>
     const portfolioItems = [
-      {
-        title: "Project Management Tracking System",
-        category: "filter-app",
-        img: "assets/img/portfolio/pmts-login.jpg",
-        alt: "Project Management Tracking System",
-        description: "A platform designed to track project milestones, manage tasks, and improve collaboration among teams.",
-        previewLink: "assets/img/portfolio/pmts-login.jpg",
-        detailsLink: "portfolio-details.html"
-      },
-      {
-        title: "Performance Measurement",
-        category: "filter-app",
-        img: "assets/img/portfolio/performance mesure.png",
-        alt: "Performance Measurement",
-        description: "A data-driven tool to evaluate employee and organizational performance through metrics and reports.",
-        previewLink: "assets/img/portfolio/performance mesure.png",
-        detailsLink: "portfolio-details.html"
-      },
-      {
-        title: "Walk With Me",
-        category: "filter-app",
-        img: "assets/img/portfolio/wokewithme.png",
-        alt: "Walk With Me App",
-        description: "An e-commerce mobile app that enhances shopping experiences with personalized recommendations and easy navigation.",
-        previewLink: "assets/img/portfolio/wokewithme.png",
-        detailsLink: "portfolio-details.html"
-      },
-      {
-        title: "Document Management",
-        category: "filter-app",
-        img: "assets/img/portfolio/doc-management.png",
-        alt: "Document Management System",
-        description: "A secure platform for creating, storing, and sharing documents with access control and version tracking.",
-        previewLink: "assets/img/portfolio/doc-management.png",
-        detailsLink: "portfolio-details.html"
-      },
-      {
-        title: "Project Management",
-        category: "filter-app",
-        img: "assets/img/portfolio/project-management.png",
-        alt: "Project Management",
-        description: "A management system to assign tasks, track progress, and automate reporting for business projects.",
-        previewLink: "assets/img/portfolio/project-management.png",
-        detailsLink: "portfolio-details.html"
-      },
-      {
-        title: "Human Resource Management (HRM)",
-        category: "filter-app",
-        img: "assets/img/portfolio/hrm.png",
-        alt: "HRM",
-        description: "A full-featured HRM system including employee records, payroll, attendance tracking, and benefits management.",
-        previewLink: "assets/img/portfolio/hrm.png",
-        detailsLink: "portfolio-details.html"
-      },
-      {
-        title: "Accounts",
-        category: "filter-app",
-        img: "assets/img/portfolio/Account.png",
-        alt: "Accounts",
-        description: "An accounting system to manage invoices, payments, expenses, and financial reporting for businesses.",
-        previewLink: "assets/img/portfolio/Account.png",
-        detailsLink: "portfolio-details.html"
-      },
-      {
-        title: "Bagha CMS (British Aid Guest House Association)",
-        category: "filter-app",
-        img: "assets/img/portfolio/Inventory.png",
-        alt: "Bagha CMS",
-        description: "A content management system for managing reservations, guest records, and operations of a guest house.",
-        previewLink: "assets/img/portfolio/Inventory.png",
-        detailsLink: "portfolio-details.html"
-      },
-      {
-        title: "Topical Cyclon",
-        category: "filter-publication",
-        img: "assets/img/publications/Topical_Cyclon.jpg",
-        alt: "Topical Cyclon Publication",
-        description: "Research publication exploring advanced topical modeling for environmental impact studies.",
-        previewLink: "assets/img/publications/Topical_Cyclon.png",
-        detailsLink: "https://www.sciencedirect.com/science/article/pii/S2590123025010849",
-        external: true
-      }
-    ];
+  {
+    title: "Project Management Tracking System",
+    category: "filter-app",
+    img: "assets/img/portfolio/pmts-login.jpg",
+    alt: "Project Management Tracking System",
+    description: `
+      <ul>
+        <li>Track project milestones and deadlines efficiently.</li>
+        <li>Manage tasks and assign responsibilities to team members.</li>
+        <li>Monitor progress with real-time dashboards and reports.</li>
+        <li>Improve collaboration through shared task boards and notifications.</li>
+        <li>Generate automated progress and performance reports.</li>
+        <li>Integrates with calendar and email for task reminders.</li>
+      </ul>
+    `,
+    previewLink: "assets/img/portfolio/pmts-login.jpg",
+    detailsLink: "portfolio-details.html",
+    buildwith: ".NET Core, React, SQL"
+  },
+  {
+    title: "Performance Measurement",
+    category: "filter-app",
+    img: "assets/img/portfolio/performance mesure.png",
+    alt: "Performance Measurement",
+    description: `
+      <ul>
+        <li>Collect and analyze employee performance metrics.</li>
+        <li>Generate detailed organizational performance reports.</li>
+        <li>Visualize data with charts and dashboards.</li>
+        <li>Identify key areas for improvement in teams or individuals.</li>
+        <li>Supports goal setting and KPI tracking.</li>
+        <li>Enhances decision-making through data-driven insights.</li>
+      </ul>
+    `,
+    previewLink: "assets/img/portfolio/performance mesure.png",
+    detailsLink: "portfolio-details.html",
+    buildwith: ".NET Core, React, SQL"
+  },
+  {
+    title: "Walk With Me",
+    category: "filter-app",
+    img: "assets/img/portfolio/wokewithme.png",
+    alt: "Walk With Me App",
+    description: `
+      <ul>
+        <li>Personalized e-commerce experience for users.</li>
+        <li>Smart product recommendations based on preferences.</li>
+        <li>Seamless navigation through intuitive UI.</li>
+        <li>Secure payment gateway integration.</li>
+        <li>Track orders and manage shopping cart efficiently.</li>
+        <li>Supports multi-platform access on mobile devices.</li>
+      </ul>
+    `,
+    previewLink: "assets/img/portfolio/wokewithme.png",
+    detailsLink: "portfolio-details.html",
+    buildwith: "Spring Boot, React, PostgreSQL"
+  },
+  {
+    title: "Document Management",
+    category: "filter-app",
+    img: "assets/img/portfolio/doc-management.png",
+    alt: "Document Management System",
+    description: `
+      <ul>
+        <li>Centralized platform for creating, storing, and managing documents.</li>
+        <li>Secure storage with encryption and automated backups.</li>
+        <li>Role-based access control for authorized users.</li>
+        <li>Version tracking to maintain document history.</li>
+        <li>Audit trails to monitor access and changes.</li>
+        <li>Advanced search with metadata, keywords, and full-text support.</li>
+        <li>Real-time collaboration and secure sharing options.</li>
+        <li>Workflow automation for approvals, reviews, and archiving.</li>
+        <li>Easy categorization, tagging, and retrieval of documents.</li>
+        <li>Supports multiple file formats and seamless editing.</li>
+      </ul>
+    `,
+    previewLink: "assets/img/portfolio/doc-management.png",
+    detailsLink: "portfolio-details.html",
+    buildwith: ".NET Core, Angular, SQL"
+  },
+  {
+    title: "Project Management",
+    category: "filter-app",
+    img: "assets/img/portfolio/project-management.png",
+    alt: "Project Management",
+    description: `
+      <ul>
+        <li>Assign and track tasks for various business projects.</li>
+        <li>Monitor project progress through dashboards.</li>
+        <li>Automate reporting and notifications for stakeholders.</li>
+        <li>Collaborate across teams with shared project boards.</li>
+        <li>Set deadlines and priorities for tasks efficiently.</li>
+        <li>Improve accountability with task history and updates.</li>
+      </ul>
+    `,
+    previewLink: "assets/img/portfolio/project-management.png",
+    detailsLink: "portfolio-details.html",
+    buildwith: ".NET Core, Angular, SQL"
+  },
+  {
+    title: "Human Resource Management (HRM)",
+    category: "filter-app",
+    img: "assets/img/portfolio/hrm.png",
+    alt: "HRM",
+    description: `
+      <ul>
+        <li>Manage employee records and personal information.</li>
+        <li>Track attendance, leave, and payroll.</li>
+        <li>Handle employee benefits and compensation.</li>
+        <li>Generate HR reports and analytics.</li>
+        <li>Supports onboarding and performance evaluation processes.</li>
+        <li>Enhances organizational HR efficiency and compliance.</li>
+      </ul>
+    `,
+    previewLink: "assets/img/portfolio/hrm.png",
+    detailsLink: "portfolio-details.html",
+    buildwith: ".NET Core, Angular, SQL"
+  },
+  {
+    title: "Accounts",
+    category: "filter-app",
+    img: "assets/img/portfolio/Account.png",
+    alt: "Accounts",
+    description: `
+      <ul>
+        <li>Manage invoices, payments, and expenses efficiently.</li>
+        <li>Generate financial reports for business analysis.</li>
+        <li>Track revenue, costs, and budgeting.</li>
+        <li>Support multiple account types and transactions.</li>
+        <li>Integrate with other business systems for seamless operations.</li>
+        <li>Ensure accurate and timely financial tracking.</li>
+      </ul>
+    `,
+    previewLink: "assets/img/portfolio/Account.png",
+    detailsLink: "portfolio-details.html",
+    buildwith: ".NET Core, Angular, SQL"
+  },
+  {
+    title: "Bagha CMS (British Aid Guest House Association)",
+    category: "filter-app",
+    img: "assets/img/portfolio/Inventory.png",
+    alt: "Bagha CMS",
+    description: `
+      <ul>
+        <li>Manage reservations and guest records efficiently.</li>
+        <li>Track room availability and booking statuses.</li>
+        <li>Organize operations and housekeeping schedules.</li>
+        <li>Generate reports on occupancy and guest feedback.</li>
+        <li>Securely store sensitive guest information.</li>
+        <li>Enhances overall guest house management processes.</li>
+      </ul>
+    `,
+    previewLink: "assets/img/portfolio/Inventory.png",
+    detailsLink: "portfolio-details.html",
+    buildwith: ".NET Core, Angular, SQL"
+  },
+  {
+    title: "Topical Cyclon",
+    category: "filter-publication",
+    img: "assets/img/publications/Topical_Cyclon.jpg",
+    alt: "Topical Cyclon Publication",
+    description: `
+      <ul>
+        <li>Explore advanced topical modeling techniques for research.</li>
+        <li>Analyze environmental data for impact studies.</li>
+        <li>Generate visual insights with charts and models.</li>
+        <li>Provide actionable insights for policy and research decisions.</li>
+        <li>Supports collaborative academic research efforts.</li>
+        <li>Published findings accessible for global readership.</li>
+      </ul>
+    `,
+    previewLink: "assets/img/publications/Topical_Cyclon.png",
+    detailsLink: "https://www.sciencedirect.com/science/article/pii/S2590123025010849",
+    external: true
+  }
+];
 
-    const portfolioContainer = document.getElementById("portfolio-items");
+const portfolioContainer = document.getElementById("portfolio-items");
 
-    portfolioItems.forEach(item => {
-      const portfolioHTML = `
+portfolioItems.forEach((item, index) => {  // added index to use as ID
+  const portfolioHTML = `
+  
     <div class="col-lg-4 col-md-6 portfolio-item isotope-item ${item.category}">
-      <div class="portfolio-content h-100 shadow-lg rounded-3">
+      <div class="item-card">
+        <div class="portfolio-content h-100 shadow-lg rounded-3">
         <img src="${item.img}" class="img-fluid rounded-top" alt="${item.alt}">
         <div class="portfolio-info p-5">
           <h4>${item.title}</h4>
-          <div class=" mt-2">
-            <a href="${item.previewLink}" class="btn-details" data-gallery="portfolio-gallery-${item.category}" title="Detail">
+          <div class="mt-2">
+            <a href="portfolio-details.html?id=${index}" class="btn-details" data-gallery="portfolio-gallery-${item.category}" title="Detail">
               Details
             </a>
           </div>
         </div>
       </div>
+        </div>
     </div>
   `;
-      portfolioContainer.insertAdjacentHTML("beforeend", portfolioHTML);
-    });
+  portfolioContainer.insertAdjacentHTML("beforeend", portfolioHTML);
+});
+
   </script>
 
   <!-- Vendor JS Files -->
